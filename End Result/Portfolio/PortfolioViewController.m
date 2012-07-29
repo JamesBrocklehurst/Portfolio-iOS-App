@@ -19,25 +19,25 @@
 
 - (IBAction) selectImage1 {
     UIImage *image = [UIImage imageNamed: @"image1-big.png"];
-    imageName = image;
+    self.imageName = image;
     [self openBigImage];
 }
 
 - (IBAction) selectImage2 {
     UIImage *image = [UIImage imageNamed: @"image2-big.png"];
-    imageName = image;
+    self.imageName = image;
     [self openBigImage];
 }
 
 - (IBAction) selectImage3 {
     UIImage *image = [UIImage imageNamed: @"image3-big.png"];
-    imageName = image;
+    self.imageName = image;
     [self openBigImage];
 }
 
 - (IBAction) selectImage4 {
     UIImage *image = [UIImage imageNamed: @"image4-big.png"];
-    imageName = image;
+    self.imageName = image;
     [self openBigImage];
 }
 
