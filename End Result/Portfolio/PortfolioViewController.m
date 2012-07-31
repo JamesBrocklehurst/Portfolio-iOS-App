@@ -10,42 +10,38 @@
 
 @implementation PortfolioViewController
 
-@synthesize imageName;
+@synthesize bigImage;
 
 - (void) dealloc {
-    [imageName release];
+    [bigImage release];
     [super dealloc];
 }
 
 - (IBAction) selectImage1 {
-    UIImage *image = [UIImage imageNamed: @"image1-big.png"];
-    self.imageName = image;
-    [self openBigImage];
+    self.bigImage = [UIImage imageNamed: @"image1-big.png"];
+    [self openBigImageView];
 }
 
 - (IBAction) selectImage2 {
-    UIImage *image = [UIImage imageNamed: @"image2-big.png"];
-    self.imageName = image;
-    [self openBigImage];
+    self.bigImage = [UIImage imageNamed: @"image2-big.png"];
+    [self openBigImageView];
 }
 
 - (IBAction) selectImage3 {
-    UIImage *image = [UIImage imageNamed: @"image3-big.png"];
-    self.imageName = image;
-    [self openBigImage];
+    self.bigImage = [UIImage imageNamed: @"image3-big.png"];
+    [self openBigImageView];
 }
 
 - (IBAction) selectImage4 {
-    UIImage *image = [UIImage imageNamed: @"image4-big.png"];
-    self.imageName = image;
-    [self openBigImage];
+    self.bigImage = [UIImage imageNamed: @"image4-big.png"];
+    [self openBigImageView];
 }
 
-- (void) openBigImage {
+- (void) openBigImageView {
     BigImageViewController *bigImageView = [[[BigImageViewController alloc] initWithNibName:@"BigImageViewController" bundle:nil] autorelease];
     bigImageView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController:bigImageView animated:YES];
-    [bigImageView.imageFrame setImage:imageName];
+    [bigImageView.imageFrame setImage:bigImage];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

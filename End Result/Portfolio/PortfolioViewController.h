@@ -11,13 +11,13 @@
 
 @interface PortfolioViewController : UIViewController
 
-@property (nonatomic, retain) UIImage *imageName;
+@property (nonatomic, retain) UIImage *bigImage;
 
 - (IBAction) selectImage1;
 - (IBAction) selectImage2;
 - (IBAction) selectImage3;
 - (IBAction) selectImage4;
 
-- (void) openBigImage;
+- (void) openBigImageView;
 
 @end
