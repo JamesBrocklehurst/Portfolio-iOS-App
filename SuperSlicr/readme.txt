@@ -1,5 +1,5 @@
 SuperSlicr Photoshop Action v.1.0 by James Brocklehurst
-http://www.mightymeta.co.uk/superslicr-ditch-the-slice-tool/
+http://www.mightymeta.co.uk/1357/superslicr-ditch-the-slice-tool/
 Copyright (c) 2011/12, MightyMeta.
 All rights reserved.
 

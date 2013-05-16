@@ -9,7 +9,7 @@
 #import "ContactViewController.h"
 
 @implementation ContactViewController
-@synthesize websiteButton;
+//@synthesize websiteButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,7 +51,7 @@
 }
 
 - (void)dealloc {
-    [websiteButton release];
+    [_websiteButton release];
     [super dealloc];
 }
 

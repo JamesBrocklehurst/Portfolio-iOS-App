@@ -18,6 +18,6 @@
 - (IBAction) selectImage3;
 - (IBAction) selectImage4;
 
-- (void) openBigImageView;
+- (void) openBigImage;
 
 @end

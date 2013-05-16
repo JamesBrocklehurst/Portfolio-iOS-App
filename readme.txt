@@ -1,6 +1,9 @@
 Portfolio iOS Application Template Files by MightyMeta
-Copyright (c) 2012 James Brocklehurst
+Copyright © 2011 James Brocklehurst
 http://www.mightymeta.co.uk
+
+These files are designed to be used in conjunction with the 'iOS for Designers Part One' article published on Smashing Magazine.
+http://coding.smashingmagazine.com/###
 
 ** Package Contents **
 

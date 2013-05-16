@@ -12,8 +12,6 @@
 
 @property (retain, nonatomic) IBOutlet UIButton *websiteButton;
 
-
-
 - (IBAction)openWebsite:(id)sender;
 - (IBAction)sendEmail:(id)sender;
 - (IBAction)callPhone:(id)sender;

@@ -10,38 +10,37 @@
 
 @implementation PortfolioViewController
 
-@synthesize bigImage;
-
-- (void) dealloc {
-    [bigImage release];
-    [super dealloc];
-}
+//@synthesize imageName;
 
 - (IBAction) selectImage1 {
-    self.bigImage = [UIImage imageNamed: @"image1-big.png"];
-    [self openBigImageView];
+    UIImage *image = [UIImage imageNamed: @"image1-big.png"];
+    self.bigImage = image;
+    [self openBigImage];
 }
 
 - (IBAction) selectImage2 {
-    self.bigImage = [UIImage imageNamed: @"image2-big.png"];
-    [self openBigImageView];
+    UIImage *image = [UIImage imageNamed: @"image2-big.png"];
+    self.bigImage = image;
+    [self openBigImage];
 }
 
 - (IBAction) selectImage3 {
-    self.bigImage = [UIImage imageNamed: @"image3-big.png"];
-    [self openBigImageView];
+    UIImage *image = [UIImage imageNamed: @"image3-big.png"];
+    self.bigImage = image;
+    [self openBigImage];
 }
 
 - (IBAction) selectImage4 {
-    self.bigImage = [UIImage imageNamed: @"image4-big.png"];
-    [self openBigImageView];
+    UIImage *image = [UIImage imageNamed: @"image4-big.png"];
+    self.bigImage = image;
+    [self openBigImage];
 }
 
-- (void) openBigImageView {
+- (void) openBigImage {
     BigImageViewController *bigImageView = [[[BigImageViewController alloc] initWithNibName:@"BigImageViewController" bundle:nil] autorelease];
     bigImageView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentModalViewController:bigImageView animated:YES];
-    [bigImageView.imageFrame setImage:bigImage];
+    [bigImageView.imageFrame setImage:self.bigImage];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,6 +58,11 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (void) dealloc {
+    [_bigImage release];
+    [super dealloc];
 }
 
 #pragma mark - View lifecycle
